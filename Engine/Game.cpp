@@ -38,6 +38,9 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+
+	player.Update( wnd.kbd );
+
 }
 
 void Game::ComposeFrame()
@@ -45,6 +48,6 @@ void Game::ComposeFrame()
 
 	gfx.FillScreen( 25, 25, 25 );
 
-	player.Draw( 300, 200, gfx );
+	player.Draw( gfx );
 
 }
