@@ -42,4 +42,9 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
+
+	gfx.FillScreen( 25, 25, 25 );
+
+	player.Draw( 300, 200, gfx );
+
 }

@@ -57,9 +57,15 @@ public:
 	}
 	void DrawRect( int x1, int y1, int x2, int y2, Color c )
 	{
-		for ( ; x <  )
+	}
+	void FillScreen( int r, int g, int b )
+	{
+		for ( int x = 0; x < ScreenWidth - 1; ++x )
 		{
-
+			for ( int y = 0; y < ScreenHeight - 1; ++y )
+			{
+				PutPixel( x, y, r, g, b );
+			}
 		}
 	}
 	void PutPixel( int x,int y,Color c );

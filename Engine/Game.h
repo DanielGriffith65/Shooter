@@ -43,6 +43,6 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	Character Player;
+	Character player;
 	/********************************/
 };
