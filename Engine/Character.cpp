@@ -3,19 +3,18 @@
 
 void Character::Draw( Graphics& gfx )
 {
-	Sprite::drawBatman( pos.x, pos.y, gfx );
+	Sprite::drawBatman( (int)pos.x, (int)pos.y, gfx );
 }
 
 void Character::Update( Keyboard& kbd )
 {
 
 	Movement( kbd );
-
+	
 }
 
-void Character::Movement( Keyboard& kbd )
+void Character::Movement(Keyboard & kbd)
 {
-
 	if (kbd.KeyIsPressed('W'))
 	{
 		pos.y -= speed;
@@ -32,7 +31,6 @@ void Character::Movement( Keyboard& kbd )
 	{
 		pos.x -= speed;
 	}
-	
 }
 
 void Character::Collision()
